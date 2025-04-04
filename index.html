@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,22 +36,16 @@
 </head>
 <body>
     <!-- Initially the embed is hidden -->
-<embed id="gameEmbed" src="https://rocketbotroyale2.winterpixel.io" type="text/html" onload="showButton()" />
+    <embed id="gameEmbed" src="https://rocketbotroyale2.winterpixel.io" type="text/html" onload="showButton()" />
 
     <button id="openUrlButton" onclick="openUrl()">Open Game URL</button>
 
     <script>
-        // Prompt for code and authentication on page load
+        // Prompt for code on page load
         window.onload = function() {
             const code = prompt("Enter the access code:");
-            if (code === "letsgottohawaii") {
-                const firstName = prompt("Enter your first name:");
-                const lastInitial = prompt("Enter your last initial:");
-                if (["Maxwell K", "William H", "David Y", "Asan A"].includes(firstName + " " + lastInitial)) {
-                    openEmbed(); // Show the embed after successful authentication
-                } else {
-                    alert("Invalid name. Embed access denied.");
-                }
+            if (code === "Kobe") {
+                openEmbed(); // Show the embed after successful code authentication
             } else {
                 alert("Invalid code. Access denied.");
             }
@@ -75,4 +67,3 @@
     </script>
 </body>
 </html>
-
